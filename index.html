@@ -7,49 +7,76 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<meta name="robots" content="all,index,follow" />
 
-	<title>Scroll To Top Then Fixed Navigation Effect With JQuery and CSS</title>
-	<meta name="description" content="Create a sticky navigation bar that remains fixed to the top after scroll" />
+	<title>Daniela Yumi</title>
+	<meta name="description" content="Daniela Yumi's Portfolio" />
 	
-	<link rel="stylesheet" type="text/css" href="css/style.css" /> <!-- Main stylesheet /-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/java.js"></script>
+    <script src="js/smoothscroll.js"></script>
+
 
 </head>
 
-<body>
+<body class="body">
 
 <section id="screen1">
 
 	<p>Scroll down</p>
-
-	<nav>
-		<ul>
-			<li><a href="#">Home</a></li>
-			<li><a href="#">About</a></li>
-			<li><a href="#">Services</a></li>
-			<li><a href="#">Team</a></li>
-			<li><a href="#">Contact</a></li>
-		</ul>
-	</nav>
-
 </section>
+    <!-- Navigation -->
+    <header class="nav-down">
+<nav class="navbar  navbar-inverse navbar ">
+        
+        <div class="container-fluid navbar">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Geovane Pereira</a>
+            </div>
+            <div class="collapse navbar-collapse navbar page-scroll" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li><a class="smoothScroll" href="#about">About Me</a></li>
+                    <li><a  class="smoothScroll" href="#resume">Resume</a></li>
+                    <li><a  class="smoothScroll" href="#portfolio">Portfolio</a></li>
+                    <li><a  class="smoothScroll" href="#contact">Contact Me</a></li>
+                </ul>
+            </div>
+        </div>
+       
+    </nav>
+   </header>
+
 	
-<section id="screen2"></section>
-<section id="screen3"></section>
 
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 
-<script>
-   $(document).ready(function(){
-	   $(window).bind('scroll', function() {
-	   var navHeight = $( window ).height() - 70;
-			 if ($(window).scrollTop() > navHeight) {
-				 $('nav').addClass('fixed');
-			 }
-			 else {
-				 $('nav').removeClass('fixed');
-			 }
-		});
-	});
-</script>
+    <div id="resume" class="timeline">
+        
+    
+    
+    
+    
+    </div>
+      <div id="portfolio" class="portfolio">
+        
+    
+    
+    
+    
+    </div>
+      <div id="contact" class="contact">
+        
+    
+    
+    
+    
+    </div>
+
 
 </body>
 </html>
